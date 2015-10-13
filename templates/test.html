@@ -1,0 +1,11 @@
+{% if name %}
+<p>Hello, {{ name|upper }} </p>
+{% else %}
+<p>Hello, Stranger! </p>
+{% endif %}
+
+<ul>
+{% for comment in comments %}
+<li>{{ comment|lower }} </li>
+{% endfor %}
+</ul>
