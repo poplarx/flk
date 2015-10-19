@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}Light Blog -- Url Show {% endblock %}
+
+{% block page_content %}
+{% for url in urls %}
+    <div class="page-header">
+        {{ url }}
+    </div>
+{% endfor %}
+{% endblock %}
